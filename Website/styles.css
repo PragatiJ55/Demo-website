@@ -1,0 +1,83 @@
+body{
+    background:dimgray;
+    color: white;
+    margin:0px;
+    padding:0px;
+    font-family:Arial, Helvetica, sans-serif
+} 
+div{
+    background:red;
+    width:100px;
+    margin:auto;
+}
+header{
+    background: black;
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top:50px;
+    height:400px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+header li{
+    margin-right: 40px;
+}
+header .mobile{
+    display: none;
+}
+@media screen and (max-width:733px){
+     header .mobile{
+         display: inline-block;
+     }
+     header .logo{
+               position: relative;
+               top:80px;
+     }
+     header .desktop{
+         display: none;
+     }
+}
+section{
+    background: rgb(36, 35, 33);
+    color:rgb(247, 247, 239);
+    padding: 20px 20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header .logo a{
+    background-image:url("logo.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height:150px;
+    width:300px;
+    position:relative;
+    text-indent: -9999999px;
+    top:-45px;
+}
+.feature-box{
+    background: white;
+    display:flex; 
+    flex-direction: row;
+}
+.feature-box figure{
+    width:250px;
+    margin:auto;
+    text-align: center;
+}
+.feature-box figure img{
+    width: 250px;
+    border-radius: 50%;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+li{
+    display:inline-block;
+    margin-right: 20px;
+}
